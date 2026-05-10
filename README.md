@@ -21,3 +21,10 @@ The game consists of one intense 3D level where players must:
 
 ## Personal Reflection
 Although I have added several refinements since the initial release, I am incredibly proud of what I achieved in those first 10 hours. It was an amazing journey to turn a "survival-style" hunt into a joyful
+
+## Game Preview
+| Start Mission | Finding the Key | The Big Surprise |
+|---|---|---|
+| ![Start](<img width="952" height="538" alt="Screenshot 2026-05-11 015843" src="https://github.com/user-attachments/assets/d772d577-e95c-4b1f-9f55-2a8fcf0b1ff9" />
+) | ![Search](<img width="955" height="533" alt="Screenshot 2026-05-11 015739" src="https://github.com/user-attachments/assets/e35fc30e-6a92-4c3d-bd77-9e49badc6c5f" /><
+) | ![Win](img width="959" height="539" alt="Screenshot 2026-05-11 015823" src="https://github.com/user-attachments/assets/4f072674-dac8-4543-8645-1a4aafd59ff9" />) |

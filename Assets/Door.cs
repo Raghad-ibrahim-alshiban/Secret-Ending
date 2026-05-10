@@ -3,16 +3,20 @@ using System.Collections;
 
 public class Door : MonoBehaviour
 {
+    [Header("UI & Audio Settings")]
     public GameObject endPanel;
-    public AudioSource winSound;
+    public AudioSource winSound;      // صوت الزفة
+    public AudioSource gameMusic;     // صوت اللعبة الأساسي
+    public AudioSource timerSound;    // صوت التايمر
 
+    [Header("References")]
+    public Timer timer;
     bool near = false;
     PlayerKey player;
-    public Timer timer;
 
     void Start()
     {
-        endPanel.SetActive(false);
+        if (endPanel != null) endPanel.SetActive(false);
     }
 
     void Update()
@@ -21,31 +25,32 @@ public class Door : MonoBehaviour
         {
             if (player != null && player.hasKey)
             {
-                StartCoroutine(Win()); // 🔥 هنا التعديل
+                Win(); 
             }
         }
     }
 
-   IEnumerator Win()
-{
-    timer.StopTimer();
-    Debug.Log("WIN 🎉");
-
-    endPanel.SetActive(true);
-
-    if (winSound != null)
+    void Win()
     {
-        winSound.Play();
-        yield return new WaitForSeconds(winSound.clip.length);
+        Debug.Log("WIN 🎉");
+
+        // 1. وقف التايمر والأصوات المزعجة فوراً
+        if (timer != null) timer.StopTimer();
+        if (gameMusic != null) gameMusic.Stop();
+        if (timerSound != null) timerSound.Stop();
+
+        // 2. إظهار شاشة النهاية وتشغيل الزفة
+        if (endPanel != null) endPanel.SetActive(true);
+        if (winSound != null) winSound.Play();
+
+        // 3. حل مشكلة الماوس (يرجعه طبيعي ويمسح أي صورة معلقة)
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto); 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        // ملاحظة: إذا تبغين اللعبة توقف تماماً، شيلي علامتين السلاش عن السطر اللي تحت
+        // Time.timeScale = 0f; 
     }
-
-    // ⛔ وقف اللعبة بعد ما يخلص الصوت
-    Time.timeScale = 0f;
-
-    // ✨ خلي الماوس يشتغل
-    Cursor.lockState = CursorLockMode.None;
-    Cursor.visible = true;
-}
 
     void OnTriggerEnter(Collider other)
     {

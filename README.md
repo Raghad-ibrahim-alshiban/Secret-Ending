@@ -1,5 +1,3 @@
-<img width="955" height="533" alt="Screenshot 2026-05-11 015739" src="https://github.com/user-attachments/assets/b09fbcab-e5b9-4a5e-b2ad-084eb347c246" />
-<img width="955" height="533" alt="Screenshot 2026-05-11 015739" src="https://github.com/user-attachments/assets/2288c5c6-192a-411e-94a5-1491edcc9da1" />
 # The Wedding Surprise Quest 💍✨
 
 ## Overview
@@ -29,4 +27,4 @@ Although I have added several refinements since the initial release, I am incred
 
 | 1. Start Mission | 2. Finding the Key | 3. The Big Surprise |
 |:---:|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/d772d577-e95c-4b1f-9f55-2a8fcf0b1ff9" width="250"/> | <img src=""https://github.com/user-attachments/assets/e35fc30e-6a92-4c3d-bd77-9e49badc6c5f" width="250"/> | <img src="https://github.com/user-attachments/assets/06fdfc95-f0a1-47cc-8d88-e99f8f0289b8" width="250"/> |
+| <img src="https://github.com/user-attachments/assets/d772d577-e95c-4b1f-9f55-2a8fcf0b1ff9" width="250"/> | <img src="https://github.com/user-attachments/assets/2288c5c6-192a-411e-94a5-1491edcc9da1" width="250"/> | <img src="https://github.com/user-attachments/assets/06fdfc95-f0a1-47cc-8d88-e99f8f0289b8" width="250"/> |
